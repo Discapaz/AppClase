@@ -9,7 +9,7 @@ class pag2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pag2)
         val recoger = findViewById<TextView>(R.id.txt_recoger)
-        intent.extras?.getString("dato","No  llego Dato")?.let {
+        intent.extras?.getString("dato","No  llego Dato efectivo")?.let {
             recoger.setText(it)
         }
     }
